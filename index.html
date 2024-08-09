@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brickfolio Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Hero Section with Search Bar -->
+    <header class="hero d-flex align-items-start">
+        <img src="assets/White Logo 1.png" alt="Brickfolio Logo" class="logo mb-3">
+        <!-- <div class="overlay"></div> -->
+        <div class="hero-content">
+            <div class=" d-flex justify-content-center align-items-center mt-5">
+                <div class="search-container d-flex justify-content-center align-items-center">
+                    <input type="text" class="search-bar" placeholder="Search by City, Location, Project, Developer" aria-label="Search">
+                    <div class="separator"></div>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Residential
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Commercial</a>
+                            <div class="commercial-options">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="commercial" id="leasing" value="leasing">
+                                    <label class="form-check-label" for="leasing">Leasing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="commercial" id="preleasing" value="preleasing">
+                                    <label class="form-check-label" for="preleasing">Preleasing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="commercial" id="outright" value="outright">
+                                    <label class="form-check-label" for="outright">Outright</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <button class="search-btn" aria-label="Search Button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg> Search</button>
+            </div>
+           
+        </div>
+    </header>
+
+    <!-- Box Text Section -->
+    <section class="box-text-section">
+        <!-- <div class="box-text"> -->
+            <p class="hero-text">
+                <span class="highlight-orange">0%</span> 
+                <span class="bold-grey">Brokerage,</span> 
+                <span class="highlight-orange">100%</span> 
+                <span class="bold-grey">Dream Home</span> 
+                <span class="normal-grey">Your Journey, Our Priority.</span>
+            </p>
+        <!-- </div> -->
+    </section>
+
+    <!-- Trending Projects Section -->
+
+    <section class="trending-projects">
+        <h2><span class="subheading">Elevate Your Lifestyle with </span><span class="highlight">Trending Projects</span></h2>
+        <div class="cards">
+            <div class="card" style="background-image: url('assets/rohan-harita.png');">
+                <div class="overlaytrend" >
+                    <h3>2, 3 & 4 BHK with 2 Ground Floors</h3>
+                    <p>Price Starts ₹1.26 Cr Onwards</p>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('assets/vtpcard.jpg');">
+                <div class="overlaytrend" >
+                    <h3>Premium 2 & 3 Bedroom Homes</h3>
+                    <p>Next To Yoo Villas</p>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('assets/wlogo.jpg');">
+                <div class="overlaytrend">
+                    <h3>Gera's Island of Joy ChildCentric Homes</h3>
+                    <p>at East Kharadi</p>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Showcase of Dream House Section -->
+    <section class="showcase">
+        <h2>Brickfolio's Showcase of <span>Dream Homes</span></h2>
+        <div class="container property-layout">
+            <div class="main-property">
+                <img src="assets/Vtp.png" alt="VTP LUXE Flamante">
+                <div class="property-details">
+                    <h3>VTP LUXE Flamante</h3>
+                    <p>New Property Launch by VTP</p>
+                    <button onclick="knowMore()">Know More</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col mr-5 property-card">
+                        <img src="assets/VTP-property.png" alt="VTP Pegasus">
+                        <div class="prelaunch-label">Pre Launch</div>
+                        <div class="card-details">
+                            <h4>VTP Pegasus</h4>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                            </svg> VTP Realty</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                              </svg> Baner, Pune</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                              </svg> 2 BHK, 614 - 627 SQFT</p>
+                            <div class="price-button-container">
+                                <span class="price">₹80 Lacs</span>
+                                <button onclick="knowMore()">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col property-card">
+                        <img src="assets/VTP-property.png" alt="VTP Pegasus">
+                        <div class="prelaunch-label">Pre Launch</div>
+                        <div class="card-details">
+                            <h4>VTP Pegasus</h4>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                            </svg> VTP Realty</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                              </svg> Baner, Pune</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                              </svg> 2 BHK, 614 - 627 SQFT</p>
+                            <div class="price-button-container">
+                                <span class="price">₹80 Lacs</span>
+                                <button onclick="knowMore()">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mr-5 property-card">
+                        <img src="assets/VTP-property.png" alt="VTP Pegasus">
+                        <div class="prelaunch-label">Pre Launch</div>
+                        <div class="card-details">
+                            <h4>VTP Pegasus</h4>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                            </svg> VTP Realty</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                              </svg> Baner, Pune</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                              </svg> 2 BHK, 614 - 627 SQFT</p>
+                            <div class="price-button-container">
+                                <span class="price">₹80 Lacs</span>
+                                <button onclick="knowMore()">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col property-card">
+                        <img src="assets/VTP-property.png" alt="VTP Pegasus">
+                        <div class="prelaunch-label">Pre Launch</div>
+                        <div class="card-details">
+                            <h4>VTP Pegasus</h4>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                            </svg> VTP Realty</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                              </svg> Baner, Pune</i></p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                              </svg> 2 BHK, 614 - 627 SQFT</p>
+                            <div class="price-button-container">
+                                <span class="price">₹80 Lacs</span>
+                                <button onclick="knowMore()">Know More</button>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="toast-container"></div>
+    
+
+
+      <!-- Brand Partnerships Section -->
+    <section class="brand-partnerships">
+        <div class="bg-color">
+            <h3>Our Brand</h3>
+            <h3 class="highlight-orange">Partnerships</h3>
+        </div>
+         
+        <div class="brand-center">
+            <img src="assets/VTP 1.png" alt="VTP Realty" class="brand-logo">
+            <img src="assets/lodha 1.png" alt="Lodha" class="brand-logo">
+            <img src="assets/godrej 1.png" alt="Godrej Properties" class="brand-logo"> 
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container text-center">
+            <h2>Unveiling Our <span class="highlight-orange">Brick by Brick</span> Achievements</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 col-12 achievement-card">
+                    <div class="achievement">
+                        <img src="assets/snhal-logo.png" alt="Saheel" class="achievement-logo">
+                        <p>Best Performance</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 achievement-card">
+                    <div class="achievement">
+                        <img src="assets/VTP 1.png" alt="VTP Realty" class="achievement-logo">
+                        <p>Best Performance</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 achievement-card">
+                    <div class="achievement">
+                        <img src="assets/Runwal.png" alt="Rumah" class="achievement-logo">
+                        <p>Best Performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Counter Section -->
+    <section class="counter">
+        <div class="counter-card">
+            <h3 id="properties-count">0</h3>
+            <p>Remarkable Properties</p>
+        </div>
+        <div class="counter-card">
+            <h3 id="customers-count">0</h3>
+            <p>Ecstatic Customers</p>
+        </div>
+        <div class="counter-card">
+            <h3 id="sales-count">0</h3>
+            <p>Crores in Property Sales</p>
+        </div>
+        <div class="counter-card">
+            <h3 id="experts-count">0</h3>
+            <p>Seasoned Property Experts</p>
+        </div>
+    </section>
+
+    <!-- client-testimonials" -->
+    <!-- Client Testimonials Section -->
+    <section class="client-testimonials">
+        <h2>Hear It From <span class="highlight-orange">Our Clients</span></h2>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe
+                    class="video-slide"
+                    src="https://www.youtube.com/embed/7KtaUdkqUOc?si=yPfjZzrTw8GtjCK1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <iframe
+                    class="video-slide"
+                    src="https://www.youtube.com/embed/KHL5xA7M6rY?si=TGWl3iCkMpfRFEkf"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    style="display: none;">
+                </iframe>
+                <iframe
+                    class="video-slide"
+                    src="https://www.youtube.com/embed/OQVrn2nu_pg?si=ISYJ7ZVlcwl7nBNq"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="display: none;">
+                </iframe>
+            </div>
+        </div>
+        <div class="pagination-indicators">
+            <span class="indicator active" onclick="showVideo(0)"></span>
+            <span class="indicator" onclick="showVideo(1)"></span>
+            <span class="indicator" onclick="showVideo(2)"></span>
+        </div>
+    </section>
+
+    <div class="content-section">
+        <div class="tab-container">
+            <button class="tab-button active" onclick="showTab('news')">News</button>
+            <button class="tab-button" onclick="showTab('blog')">Blog</button>
+        </div>
+
+        <div id="news" class="tab-content active">
+            <div class="content-image">
+                <img src="assets/adani.png" alt="News Image">
+                <div class="overlayContent">
+                    <h2>Pune: Adani Group Offers ₹5,000 Cr for Purandar Airport Land Acquisition in Pune</h2>
+                    <button class="learn-more" onclick="location.href='https://www.freepressjournal.in/mumbai/mumbai-news-adani-group-offers-5000-cr-for-purandar-airport-land-acquisition'">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="tab-content">
+            <div class="content-image">
+                <img src="assets/Danish.jpg" alt="News Image">
+                <div class="overlayContent">
+                    <h2>Danish Equbal: Steering Brickfolio Towards a New Era of Real Estate Solutions</h2>
+                    <button class="learn-more" onclick="location.href='https://brickfolio.in/blog/Danish-Equbal-Steering-Brickfolio-Towards-a-New-Era-of-Real-Estate-Solutions'">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Property Centre</h3>
+                <ul>
+                    <li><a href="#">Commercial Property For Investment</a></li>
+                    <li><a href="#">Commercial Property For Leasing</a></li>
+                    <li><a href="#">Commercial Property For Outright</a></li>
+                    <li><a href="#">Why Commercial Real Estate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Commercial Property</a></li>
+                    <li><a href="#">Residential Property</a></li>
+                    <li><a href="#">Management Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Copyright Brickfolio Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="scripts.js" defer></script>
+    <!-- Adding jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
