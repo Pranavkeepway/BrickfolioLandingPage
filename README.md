@@ -8,7 +8,7 @@ Installation
 Clone the repo:
 bash
 Copy code
-git clone https://gitlab.com/pranavkeepway/brickfolio-landing-page.git
+git clone https://github.com/Pranavkeepway/BrickfolioLandingPage.git
 
 Navigate to the project directory:- Open Folder - brickfolio-landing-page
 
